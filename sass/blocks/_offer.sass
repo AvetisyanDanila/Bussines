@@ -1,0 +1,76 @@
+.offer
+    position: relative
+    padding: 130px 0 0 0
+    @media (max-width: 991px)
+        padding: 145px 0 0 0
+    @media (max-width: 767px)
+        padding: 170px 0 0 0
+    @media (max-width: 575px)
+        padding: 200px 0 0 0
+    justify-content: center
+    align-items: center
+    text-align: center
+    &-img
+        width: 100%
+        @media (max-width: 575px)
+            height: 200px
+    &-block
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -25%)
+        @media (max-width: 991px)
+            transform: translate(-50%, -15%)
+        @media (max-width: 991px)
+            transform: translate(-50%, -5%)
+        @media (max-width: 575px)
+            transform: translate(-50%, 35%)
+        &__title
+            color: $white
+            font-size: 48px
+            +bold
+            @media (max-width: 991px)
+                font-size: 40px
+            @media (max-width: 767px)
+                font-size: 30px
+            @media (max-width: 575px)
+                font-size: 26px
+        &__subtitle
+            color: $white
+            font-size: 30px
+            +light
+            margin-bottom: 35px
+            @media (max-width: 575px)
+                margin-bottom: 15px
+            @media (max-width: 991px)
+                font-size: 30px
+            @media (max-width: 767px)
+                font-size: 25px
+            @media (max-width: 575px)
+                font-size: 18px
+        &__btn
+            font-size: 23px
+            @media (max-width: 991px)
+                font-size: 16px
+            @media (max-width: 767px)
+                font-size: 14px
+            @media (max-width: 575px)
+                font-size: 12px
+            +bold
+            text-transform: uppercase
+            color: $white
+            background-color: $yellow
+            border: none
+            padding: 25px 40px
+            @media (max-width: 767px)
+                padding: 20px 30px
+            @media (max-width: 575px)
+                padding: 15px 20px
+            border-radius: 5px
+            border: 3px solid $yellow
+            transition: 0.3s
+            &:hover
+                color: $yellow
+                background-color: transparent
+            &:focus
+                +outline

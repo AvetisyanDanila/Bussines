@@ -1,0 +1,74 @@
+.menu
+    padding: 20px 0
+    @media (max-width: 767px)
+        padding: 15px 0
+    @media (max-width: 575px)
+        padding: 5px 0 0 0
+    .logo
+        width: 74px
+        height: 49px
+        &-block
+            @media (max-width: 767px)
+                margin-bottom: 15px
+            &__title
+                color: $text
+                font-size: 37px
+                +bold
+                @media (max-width: 991px)
+                    font-size: 24px 
+            &__subtitle
+                color: $text
+                font-size: 15px
+                @media (max-width: 991px)
+                    font-size: 12px
+    .dot
+        width: 6px
+        height: 6px
+        background-color: #424242
+        border-radius: 50%
+        margin: 0 15px
+        @media (max-width: 767px)
+            margin: 0 10px
+    &-block
+        @media (max-width: 575px)
+            margin-bottom: 20px
+        &__item a
+            color: $text
+            font-size: 15px
+            +bold
+            +outline
+            @media (max-width: 991px)
+                font-size: 12px
+            &:hover
+                color: $accent
+                text-decoration: none
+                transition: ease 0.2s
+    &-btn
+        color: $white
+        background-color: $accent
+        border: none
+        padding: 12px 22px
+        @media (max-width: 767px)
+            padding: 10px 15px
+        border-radius: 5px
+        margin-left: 30px
+        border: 3px solid $accent
+        transition: 0.3s
+        +bold
+        @media (max-width: 991px)
+            font-size: 12px
+            margin-left: 15px
+        @media (max-width: 767px)
+            font-size: 12px
+        &:focus
+            +outline
+        &:hover
+            color: $accent
+            background-color: $white
+.fixed
+    overflow: hidden
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 10
+    background-color: $white

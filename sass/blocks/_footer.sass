@@ -1,0 +1,91 @@
+.footer
+    padding: 100px 0
+    @media (max-width: 991px)
+        padding: 60px 0 80px 0
+    background: $dark
+    text-align: center
+    &__title
+        color: $white
+        font-size: 29px
+        @media (max-width: 991px)
+            font-size: 24px
+        +bold
+        line-height: 22px
+        margin-bottom: 30px
+    .links
+        margin-bottom: 30px
+        justify-content: center
+        align-items: center
+        text-align: center
+        &__item
+            cursor: pointer
+            margin-right: 25px
+            font-size: 23px
+            @media (max-width: 991px)
+                font-size: 21px
+            line-height: 22.5px
+            color: $white
+            border: 2px solid $grey
+            width: 55px
+            border-radius: 5px
+            padding: 14px 0
+            transition: ease 0.3s
+            +outline
+            &:hover
+                border: 2px solid $accent
+                color: $white
+            &:last-child
+                margin-right: 0
+    &__subtitle
+        margin-bottom: 30px
+        color: #cecece
+        font-size: 14px
+        @media (max-width: 575px)
+            font-size: 12px
+        line-height: 22px
+    &__input
+        display: block
+        margin: 0 auto
+        width: 60%
+        @media (max-width: 991px)
+            width: 70%
+        @media (max-width: 767px)
+            width: 90%
+        background-color: $grey
+        border: none
+        line-height: 50px
+        padding-left: 22px
+        font-size: 14px
+        margin-bottom: 30px
+        color: #cecece
+    &__btn
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        margin: 0 auto
+        width: 15%
+        @media (max-width: 991px)
+            width: 20%
+        @media (max-width: 767px)
+            width: 30%
+        @media (max-width: 575px)
+            width: 40%
+        padding: 18px 34px
+        @media (max-width: 575px)
+            padding: 14px 34px
+        background-color: transparent
+        border: none
+        color: $white
+        border: 2px solid $grey
+        border-radius: 5px
+        +bold
+        font-size: 17px
+        @media (max-width: 991px)
+            font-size: 14px
+        line-height: 22px
+        transition: ease 0.3s
+        &:hover
+            border: 2px solid $accent
+        &:focus
+            +outline

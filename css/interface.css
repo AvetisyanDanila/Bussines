@@ -1,0 +1,69 @@
+body {
+  font-family: 'Helv Reg'; }
+
+@media (max-width: 767px) {
+  .order1 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; } }
+
+@media (max-width: 767px) {
+  .order2 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; } }
+
+@media (max-width: 767px) {
+  .order3 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3; } }
+
+@media (max-width: 767px) {
+  .order4 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4; } }
+
+@media (max-width: 767px) {
+  .order5 {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5; } }
+
+@media (max-width: 767px) {
+  .order6 {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6; } }
+
+.block-name {
+  text-align: center; }
+  .block-name__title {
+    font-family: 'Helv bold';
+    font-size: 36px; }
+    @media (max-width: 991px) {
+      .block-name__title {
+        font-size: 30px; } }
+  .block-name__subtitle {
+    font-size: 20px;
+    font-family: 'Helv thin'; }
+    @media (max-width: 991px) {
+      .block-name__subtitle {
+        font-size: 16px; } }
+  .block-name__hr {
+    height: 4px;
+    background-color: #424242;
+    width: 50px;
+    margin-top: 14px;
+    margin-bottom: 45px; }
+
+.link:hover {
+  text-decoration: none; }
+
+input::-webkit-input-placeholder {
+  color: #b8b8b8; }
+
+input:-moz-placeholder {
+  color: #b8b8b8; }
+/*# sourceMappingURL=interface.css.map */

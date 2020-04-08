@@ -1,0 +1,117 @@
+.analys
+    padding: 100px 0
+    @media (max-width: 991px)
+        padding: 60px 0 80px 0
+    background-color: $lightblue
+    &-arrow
+        margin-top: 20px
+        padding: 24px 17px 20px 17px
+        border: 3px solid $white
+        border-radius: 50%
+        margin-bottom: 50px
+        cursor: pointer
+    .analys-form
+        background-color: $white
+        width: 680px
+        @media (max-width: 991px)
+            width: 580px
+        @media (max-width: 767px)
+            width: 500px
+        @media (max-width: 575px)
+            width: 340px
+        margin: 0 auto
+        position: relative
+        padding: 60px
+        border-radius: 5px
+        transition: 0.3s
+        &::before
+            content: ''
+            position: absolute
+            background: $white
+            left: 45.7% 
+            @media (max-width: 991px)
+                left: 45%
+            @media (max-width: 767px)
+                left: 44%
+            @media (max-width: 575px)
+                left: 42%
+            top: -20px
+            width: 60px 
+            height: 60px
+            z-index: 1
+            transform: rotate(45deg)
+        &__close
+            cursor: pointer
+            display: flex
+            justify-content: center
+            text-align: center
+            align-items: center
+            width: 45px
+            height: 45px
+            @media (max-width: 575px)
+                width: 40px
+                height: 40px
+            font-size: 24px
+            @media (max-width: 575px)
+                font-size: 20px
+            color: $white
+            +light
+            background-color: $accent
+            border: 2px solid $white
+            border-radius: 50%
+            position: absolute
+            right: 0
+            top: 0
+            transform: translate(40%, -50%)
+        &__text
+            display: block
+            margin: 0 auto
+            text-align: center
+            color: #828282
+            font-size: 14.5px
+            line-height: 22px
+            margin-bottom: 40px
+            @media (max-width: 991px)
+                font-size: 14px
+            @media (max-width: 575px)
+                text-align: justify
+        &__input
+            display: block
+            margin: 0 auto
+            width: 440px
+            @media (max-width: 767px)
+                width: 340px
+            @media (max-width: 575px)
+                width: 240px
+            margin-bottom: 10px
+            padding-left: 18px
+            border: 1px solid #d8d8d8
+            font-size: 14px
+            line-height: 55px
+            @media (max-width: 767px)
+                line-height: 45px
+            border-radius: 5px
+            &:focus
+                box-shadow: 0 0 5px rgba(18, 135, 191, 0.66)
+                border: 1px solid #1287bf
+        &__btn
+            display: block
+            margin: 0 auto
+            font-size: 15px
+            @media (max-width: 991px)
+                font-size: 14px
+            +bold
+            text-transform: uppercase
+            color: $white
+            padding: 17px 30px
+            background-color: $accent
+            border: none
+            border-radius: 5px
+            margin-top: 27px
+            border: 3px solid $accent
+            transition: ease 0.3s
+            &:hover
+                background-color: transparent
+                color: $accent
+            &:focus
+                +outline

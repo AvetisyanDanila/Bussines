@@ -1,0 +1,92 @@
+.approch
+    overflow-x: hidden
+    padding: 100px 0
+    @media (max-width: 991px)
+        padding: 60px 0 80px 0
+    background-color: $lightgrey
+    &-block
+        margin-bottom: 40px
+        @media (max-width: 767px)
+            flex-direction: column
+        &:last-child
+            margin-bottom: 0
+        &__text
+            width: 100%
+            @media (max-width: 767px)
+                width: 339px
+            padding: 77px
+            @media (max-width: 991px)
+                padding: 56.5px
+            @media (max-width: 767px)
+                padding: 50px 40px
+                border-bottom-left-radius: 5px 
+                border-bottom-right-radius: 5px 
+            background-color: $white
+        &__title
+            font-size: 18px
+            line-height: 26px
+            color: $text
+            +bold
+            margin-bottom: 13px
+            @media (max-width: 767px)
+                text-align: center
+        &__desc
+            font-size: 14px
+            color: #5c5c5c
+            max-width: 600px
+            text-align: justify
+        &__step
+            color: $white
+            font-size: 20px
+            line-height: 21px
+            @media (max-width: 575px)
+                line-height: 19px
+            text-align: center
+            background-color: $accent
+            padding: 20px 30px
+            @media (max-width: 991px)
+                padding: 10px 20px
+            border: 2px solid $white
+            border-radius: 3px
+            &-num
+                font-size: 60px
+                font-family: Georgia
+                font-weight: 700
+                display: block
+                @media (max-width: 991px)
+                    font-size: 50px
+                @media (max-width: 575px)
+                    font-size: 40px
+        &-left
+            position: relative
+            &__step
+                position: absolute
+                left: calc( 339px - 104px ) // от ширины фотографии отнял ширину step, чтобы прижать step к правому краю фотографии
+                @media (max-width: 991px)
+                    left: calc( 339px - 83px )
+                transform: translate(50%, 0)
+                @media (max-width: 767px)
+                    transform: translate(-50%, 50%) 
+                    top: calc( 236px - 86px )
+                @media (max-width: 575px)
+                    left: 50%
+        &-right
+            position: relative
+            &__title
+                text-align: right
+                @media (max-width: 991px)
+                    text-align: left
+                @media (max-width: 767px)
+                    text-align: center
+                max-width: 600px
+            &__step
+                position: absolute
+                right: calc( 339px - 104px ) // от ширины фотографии отнял ширину step, чтобы прижать step к левому краю фотографии
+                @media (max-width: 991px)
+                    right: calc( 339px - 83px )
+                @media (max-width: 767px)
+                    transform: translate(50%, 50%) 
+                    top: calc( 236px - 86px )
+                    @media (max-width: 575px)
+                        right: 50%
+                transform: translate(-50%, 0)
